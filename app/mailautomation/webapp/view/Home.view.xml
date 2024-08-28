@@ -1,0 +1,37 @@
+<mvc:View controllerName="com.mailautomation.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    >
+     
+            <Page id="homePage" title="" showNavButton="false">
+                <content>
+                    <HBox id="_IDGenHBox1" class="loginContainer">
+                        <!-- Company Logo -->
+                        <Image id="_IDGenImage1" src="./images/incresolimage.jpg" alt="Company Logo" class="companyLogo"/>
+
+                        <!-- Login Form -->
+                        <VBox id="_IDGenVBox1" class="formVBox">
+                            <Label id="_IDGenLabel1" text="Select user type" labelFor="userType" class="sapUiSmallMarginTop textcolor"/>
+                            <Select id="userType">
+                                <core:Item id="_IDGenItem1" text="Admin"/>
+                                <core:Item id="_IDGenItem2" text="User"/>
+                            </Select>
+
+                            <Label id="_IDGenLabel2" text="Username" labelFor="username" class="sapUiSmallMarginTop textcolor"/>
+                            <Input id="username" placeholder="Enter your username"
+                                   showValueHelp="true" />
+
+                            <Label id="_IDGenLabel3" text="Password" labelFor="password" class="sapUiSmallMarginTop textcolor"/>
+                            <Input id="password" type="Password" placeholder="Enter your password"
+                                   showValueHelp="true" />
+
+                            <!-- Login Button -->
+                            <Button id="_IDGenButton1" text="Login" type="Emphasized" press="onLoginPress" class="loginButton "/>
+                            <Link id="_IDGenLink1" text="Forgot password?" press="onForgotPasswordPress" class="forgotPasswordLink"/>
+                        </VBox>
+                    </HBox>
+                </content>
+            </Page>
+        
+</mvc:View>

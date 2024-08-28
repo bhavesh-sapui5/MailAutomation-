@@ -1,0 +1,43 @@
+<mvc:View
+    controllerName="com.mailautomation.controller.SplitApp"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+     <Bar id="headerBar" class="header">
+            <!-- Logo on the left side -->
+            <contentLeft>
+         
+                <Image
+                    id="_IDGenImage1"
+                    src="./images/incresollogo.png"
+                    alt="Logo"
+                    width="100px"
+                    height="30px"
+                />
+            </contentLeft>
+
+            <!-- Title in the middle -->
+            <contentMiddle>
+                <Title
+                    id="_IDGenTitle1"
+                    level="H3"
+                    text="Incresol Mail Processor"
+                />
+            </contentMiddle>
+        </Bar>
+        
+    
+    <SplitApp id="splitApp">
+        <masterPages>
+                     <mvc:XMLView
+                id="masterPage"
+                viewName="com.mailautomation.view.Master"
+            />
+            
+        </masterPages>
+        <detailPages>
+           <mvc:XMLView
+           id="detailpage"
+    viewName="com.mailautomation.view.Detail"/>
+        </detailPages>
+    </SplitApp>
+</mvc:View>
